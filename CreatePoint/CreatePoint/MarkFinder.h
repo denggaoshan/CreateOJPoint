@@ -14,7 +14,8 @@ enum MarkType
 	MARK_REPEAT, //POINT±Í«©
 	MARK_INT,	//INT±Í«©
 	
-	MARK_BR		//ªª∫≈±Í«©
+	MARK_BR,	//ªª∫≈±Í«©
+	MARK_BK 	//ø’∏Ò±Í«©
 };
 
 class MarkFinder

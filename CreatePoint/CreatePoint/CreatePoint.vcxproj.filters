@@ -27,6 +27,12 @@
     <ClInclude Include="MarkFinder.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="MarkBK.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MarkBR.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MarkINT.cpp">
@@ -42,6 +48,12 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="MarkFinder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MarkBK.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MarkBR.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

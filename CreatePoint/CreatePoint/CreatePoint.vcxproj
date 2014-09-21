@@ -66,6 +66,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Mark.h" />
+    <ClInclude Include="MarkBK.h" />
+    <ClInclude Include="MarkBR.h" />
     <ClInclude Include="MarkFinder.h" />
     <ClInclude Include="MarkINT.h" />
     <ClInclude Include="MarkREPEAT.h" />
@@ -73,6 +75,8 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Mark.cpp" />
+    <ClCompile Include="MarkBK.cpp" />
+    <ClCompile Include="MarkBR.cpp" />
     <ClCompile Include="MarkFinder.cpp" />
     <ClCompile Include="MarkINT.cpp" />
     <ClCompile Include="MarkREPEAT.cpp" />

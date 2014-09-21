@@ -1,9 +1,6 @@
-<REPEAT times=2 format="newline">
-	<REPEAT times=6 format="space">
+<REPEAT times=5 format="newline">
 	<INT>num<FROM>1<TO>1</INT>
-	</REPEAT>
-	
-	<REPEAT times=3 format="space">
-	<INT>num<FROM>2<TO>2</INT>
-	</REPEAT>
+	<BK>
+	<INT><FROM>2<TO>2</INT>
 </REPEAT>
+
