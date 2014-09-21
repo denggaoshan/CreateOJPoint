@@ -1,0 +1,4 @@
+<REPEAT times=100 format="space">
+	<INT>num<FROM>100<TO>200</INT>
+</REPEAT>
+
