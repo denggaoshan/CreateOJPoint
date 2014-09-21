@@ -1,4 +1,9 @@
-<REPEAT times=100 format="space">
-	<INT>num<FROM>100<TO>200</INT>
+<REPEAT times=2 format="newline">
+	<REPEAT times=6 format="space">
+	<INT>num<FROM>1<TO>1</INT>
+	</REPEAT>
+	
+	<REPEAT times=3 format="space">
+	<INT>num<FROM>2<TO>2</INT>
+	</REPEAT>
 </REPEAT>
-

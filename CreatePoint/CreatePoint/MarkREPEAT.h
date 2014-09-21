@@ -25,7 +25,8 @@ private:
 	string body;
 
 	bool trans(string text);
-	bool getValue();
+	string getValue(string body);
 
 	Format judgeType(string type);
+	string getFormatString();
 };

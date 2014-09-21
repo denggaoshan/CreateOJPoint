@@ -22,14 +22,13 @@ int main()
 		{
 			break;
 		}
+		if(ch=='\n'||ch=='\t')
+			continue;
 		text += ch;
 	}
 	
 
-	int i=100;
-	while(i--)
-	{
-		MarkREPEAT mk(text);
-		mk.toString();
-	}
+	MarkREPEAT mk(text);
+	cout<<mk.toString();
+	
 }
