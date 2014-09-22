@@ -4,15 +4,17 @@
 
 MarkINT::MarkINT()
 {
+	this->origin = "";
 	from = 0;
-	to = 10000;
+	to = 9999;
 	name = "";
 }
 
 MarkINT::MarkINT(string text)
 {
+	this->origin = text;
 	from = 0;
-	to = 10000;
+	to = 9999;
 	name = "";
 	trans(text);
 }
@@ -41,7 +43,7 @@ bool MarkINT::trans(string text)
 
 	while(true)
 	{
-		int flag = false; //检测下这一次搜索有没有搜索到东西
+		bool flag = false; //检测下这一次搜索有没有搜索到东西
 
 		fBeg = text.find("<FROM>");
 		if(string::npos != fBeg)

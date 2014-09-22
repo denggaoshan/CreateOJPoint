@@ -1,9 +1,11 @@
 #include "MarkFinder.h"
 
 #include "MarkINT.h"
+#include "MarkDOUBLE.h"
 #include "MarkREPEAT.h"
 #include "MarkBK.h"
 #include "MarkBR.h"
+
 
 MarkFinder::MarkFinder()
 {
@@ -59,6 +61,17 @@ MarkType MarkFinder::findOneMark(string text,int &begin,int& end)
 		}
 	}
 
+	begin = text.find("<DOUBLE");
+	if(string::npos != begin)
+	{
+		if(begin < beginret)
+		{
+		ret = MARK_DOUBLE;
+		beginret = begin ;
+		end = text.find("</DOUBLE>",begin) + 8;
+		}
+	}
+
 	begin = beginret;
 	
 	return ret;
@@ -77,6 +90,9 @@ Mark* MarkFinder::createMarkByType(MarkType type,string text)
 		break;
 	case MARK_INT:
 		ret = new MarkINT(text);
+		break;
+	case MARK_DOUBLE:
+		ret = new MarkDOUBLE(text);
 		break;
 	case MARK_BR:
 		ret = new MarkBR(text);

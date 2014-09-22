@@ -13,6 +13,7 @@ enum MarkType
 
 	MARK_REPEAT, //POINT±êÇ©
 	MARK_INT,	//INT±êÇ©
+	MARK_DOUBLE,
 	
 	MARK_BR,	//»»ºÅ±êÇ©
 	MARK_BK 	//¿Õ¸ñ±êÇ©

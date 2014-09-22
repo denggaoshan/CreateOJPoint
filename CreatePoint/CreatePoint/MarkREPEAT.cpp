@@ -14,6 +14,7 @@ MarkREPEAT::MarkREPEAT()
 
 MarkREPEAT::MarkREPEAT(string text)
 {
+	this->origin = text;
 	this->times = 1;
 	this->format = SPACE;
 	trans(text);
@@ -79,31 +80,6 @@ bool MarkREPEAT::trans(string text)
 		break;
 	}
 
-	//¶ÁÈ¡ body ²¿·Ö
-/*	fBeg = text.find(">");
-	fEnd = text.find("</REPEAT>");
-	string tmpbody = text.substr(fBeg+1,fEnd-fBeg-1);
-	
-	while(true)
-	{
-		bool flag = false;
-		fBeg = tmpbody.find('\n');
-		if(string::npos != fBeg)
-		{
-			tmpbody.erase(fBeg,1);
-			flag = true;
-		}
-		fBeg = tmpbody.find('\t');
-		if(string::npos != fBeg)
-		{
-			tmpbody.erase(fBeg,1);
-			flag = true;
-		}
-		if(flag == false)
-			break;
-	}
-	this->body = tmpbody;
-*/
 	ret += getValue(text);
 
 	return true;

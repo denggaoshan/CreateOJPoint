@@ -1,0 +1,5 @@
+<REPEAT format="newline" times=100>
+	<INT><FROM>1<TO>100</INT>
+	<BK>
+	<DOUBLE><PRECISION>3<FROM>0.0<TO>1.0</DOUBLE>
+</REPEAT>

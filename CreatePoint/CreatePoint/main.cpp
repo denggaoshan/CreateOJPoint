@@ -31,4 +31,5 @@ int main()
 	MarkREPEAT mk(text);
 	cout<<mk.toString();
 	
+	getchar();
 }

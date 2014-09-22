@@ -1,6 +1,7 @@
-<REPEAT times=5 format="newline">
-	<INT>num<FROM>1<TO>1</INT>
+<REPEAT times=50 format="newline">
+	<DOUBLE><PRECISION>3<TO>3.0<FROM>2.0</DOUBLE>
 	<BK>
-	<INT><FROM>2<TO>2</INT>
+	<INT><TO>10<FROM>10</INT>
 </REPEAT>
+
 
